@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html en="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <style>
+        body {
+            background: rgba(0, 0, 0, 0.1)url("backg.jpg");
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .html {
+            scroll-behavior: smooth;
+        }
+
+        .body {
+            display: flex;
+            background: black;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            padding: 10px;
+
+        }
+
+        .contain {
+            display: flex;
+            margin-left: 235px;
+            margin-top: 67px;
+        }
+
+        .container {
+            width: 536px;
+            background: rgba(0, 0, 0, 0.1)url("images.jpg");
+            background-size: cover;
+            background-blend-mode: darken;
+            border-radius: 9px;
+            height: 579px;
+            align-items: center;
+            padding: 39px;
+            box-sizing: border-box;
+            margin-right: 119px;
+        }
+
+        /*
+    width: 469px;
+    background: whitesmoke;
+    border-radius: 9px;
+    height: 568px;
+    align-items: center;
+    padding: 39px;
+     margin: 147px;
+*/
+
+        .upper {
+            padding-bottom: 47px;
+            margin-bottom: -26px;
+        }
+
+        .title {
+            font-size: 34px;
+
+
+        }
+
+        .user-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .row::after {
+            margin: 4px;
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .col-23 {
+            margin: 6px;
+        }
+
+        .container-two {
+            width: 409px;
+            background: whitesmoke;
+            border-radius: 9px;
+            box-sizing: border-box;
+            height: 508px;
+            align-items: center;
+            padding: 39px;
+            background-color: rgba(0, 0, 0, 0.671);
+            color: white;
+            margin-left: 50px;
+            margin-top: 36px;
+            /*
+    max-width: 100%;
+    width: 469px;
+    background: whitesmoke;
+    border-radius: 9px;
+    height: 568px;
+    align-items: center;
+    padding: 39px;
+     margin: 147px;
+
+}
+*/
+
+        }
+
+        .sub {
+            align-items: center;
+            justify-content: center;
+            margin-top: 21px;
+            margin-left: 118px;
+        }
+
+        .button {
+            height: 45px;
+            margin-top: -50px;
+            margin-bottom: 45px;
+            text-align: center;
+            width: 219px;
+            max-width: 100%;
+            background-color: rgb(0, 0, 0);
+            font-size: 19px;
+            color: white;
+            user-select: none;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            -webkit-transition-duration: 0.4s;
+            position: relative;
+            border-radius: 4em;
+        }
+
+        .button:hover {
+            transition-duration: 0.1s;
+            background-color: #3A3A3A;
+        }
+
+        .button:after {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 4em;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: all 0.5s;
+            box-shadow: 0 0 10px 40px rgb(14, 13, 13);
+        }
+
+        .button:active:after {
+            box-shadow: 0 0 0 0 white;
+            position: absolute;
+            border-radius: 4em;
+            left: 0;
+            top: 0;
+            opacity: 1;
+            transition: 0s;
+        }
+
+        .button:active {
+            top: 1px;
+        }
+
+
+        /* .btn:hover {
+            background-color: rgba(255, 255, 255, 0.747);
+            color: black;
+            letter-spacing: 8px;
+        }
+
+        .button .btn .btn-dark:hover {
+            letter-spacing: 56%;
+            font-size: 45px;
+        } */
+
+        .row-com {
+            padding: 10px;
+        }
+
+        .com {
+            padding: 10px;
+            margin-left: -18px;
+        }
+
+        .last {
+            margin-bottom: 18px;
+        }
+
+        input[type=text] {
+            padding: 3px;
+        }
+
+        .one {
+            padding-bottom: 56px;
+
+        }
+
+        .two {
+            font-size: 24px;
+            color: beige;
+            margin-top: 39px;
+        }
+
+        .heading {
+            align-items: center;
+            justify-content: center;
+            margin-left: 21px;
+        }
+
+        .container-three {
+            display: flex;
+        }
+
+        .container-three img {
+            display: block;
+            margin-left: -12px;
+            margin-top: -43px;
+            height: 127px;
+            width: 100px;
+        }
+
+        .slide:hover,
+        .slide:focus {
+            box-shadow: inset 6.5em 0 0 0 var(--hover);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contain">
+        <div class="container-two">
+            <!--<div class="container-three">
+                <img src="newlogo2-removebg-preview.png" alt="">
+                <h1 class="heading">Information</h1>
+            </div>-->
+            <p class="one"></p>
+            <p class="two">In case of any dependency please contact of officer in the respective pages</p>
+        </div>
+        <div class="container">
+            <div class="upper">
+                <div class="title">Register and Complain</div>
+                <p class="para">Fill the form carefully</p>
+            </div>
+            <form action="/submit" name="myForm" action="" onsubmit="return validateForm()" method="POST">
+                <div class="user-details">
+                    <div class="row">
+                        <div class="col-23">
+                            <label for="fname">Name:</label>
+                        </div>
+                        <input type="text" name="fname" placeholder="Enter your name" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-23">
+                            <label for="fname">Email: </label>
+                        </div>
+                        <input type="text" name="femail" placeholder="Enter your name" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-23">
+                            <label for="fname">Address:</label>
+                        </div>
+                        <input type="text" name="faddress" placeholder="Enter your name" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-23">
+                            <label for="fname">Contact</label>
+                        </div>
+                        <input type="text" name="fcontact" placeholder="Enter your name" required>
+                    </div>
+                    <div class="row last">
+                        <div class="col-23">
+                            <label for="fname">Ward Number:</label>
+                        </div>
+                        <input type="text" name="fward" placeholder="Enter the ward number" required>
+                    </div>
+                </div>
+                <hr>
+                <div class="row-com">
+                    <label for="fname">Complain Details:</label>
+                    <div class="com">
+                        <textarea type="text" name="fcomplain" rows="5" cols="60" placeholder="Elaborate Your concern"
+                            required></textarea>
+                    </div>
+                </div>
+                <div class="sub">
+                    <button class="button slide">Register & Complain</button>
+                </div>
+        </div>
+    </div>
+</body>
+
+</html>

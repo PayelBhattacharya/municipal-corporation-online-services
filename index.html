@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="logo" href="favicon.ico" type="image/x-icon">
+  <script
+    data-dapp-detection="">!function () { let e = !1; function n() { if (!e) { const n = document.createElement("meta"); n.name = "dapp-detected", document.head.appendChild(n), e = !0 } } if (window.hasOwnProperty("ethereum")) { if (window.__disableDappDetectionInsertion = !0, void 0 === window.ethereum) return; n() } else { var t = window.ethereum; Object.defineProperty(window, "ethereum", { configurable: !0, enumerable: !1, set: function (e) { window.__disableDappDetectionInsertion || n(), t = e }, get: function () { if (!window.__disableDappDetectionInsertion) { const e = arguments.callee; e && e.caller && e.caller.toString && -1 !== e.caller.toString().indexOf("getOwnPropertyNames") || n() } return t } }) } }();</script>
+  <title>Home Page</title>
+  <style>
+    /* body {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(background.jpg);
+      background-size: cover;
+
+    } */
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    .heading {
+      text-align: center;
+      /* position: relative; */
+      /* top: 11px; */
+      /* left: -93px; */
+      color: white;
+      padding: 8.6rem 0rem;
+      /* margin-bottom: 2px; */
+      margin-left: -.7rem;
+      font-size: 3.5rem;
+    }
+
+    .center {
+      top: 13.8rem;
+      position: relative;
+      height: 39.2rem;
+      margin: auto;
+      width: 49%;
+      padding: 1.5rem;
+      background-color: #0008;
+    }
+
+
+    #home1 {
+      min-height: 69rem;
+      width: 100%;
+      background-image: linear-gradient(rgb(20 1 33), rgb(50 70 154 / 70%)), url(background.jpg);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header img {
+      float: left;
+      width: 10.6rem;
+      height: 10.9rem;
+      margin-left: 2rem;
+    }
+
+    .topnav {
+      /* overflow: hidden; */
+      background-color: #0002;
+      margin-top: 1rem;
+    }
+
+    .topnav a {
+      float: right;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 2.4rem 1.9rem;
+      text-decoration: none;
+      font-size: 1.7rem;
+    }
+
+    /* .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    } */
+    .dropdown {
+      float: right;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 1.6rem;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 2.5rem 1.7rem;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    /* .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: red;
+    } */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 16rem;
+      box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 1.2rem 1.6rem;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    /* .dropdown-content a:hover {
+      background-color: #ddd;
+    } */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* .left-other-links {
+      position: relative;
+      float: left;
+      background: rgba(0, 0, 0, 0.719);
+      top: -250px;
+      width: auto;
+      height: auto;
+    }
+    .right-important-news {
+      position: relative;
+      float: right;
+      background: rgba(0, 0, 0, 0.719);
+      top: -250px;
+      width: auto;
+      height: auto;
+    } */
+    .topnav a::after {
+      content: '';
+      width: 0%;
+      height: .2rem;
+      background: white;
+      display: block;
+      margin: auto;
+      transition: .5s;
+    }
+
+    .topnav a:hover::after {
+      width: 100%;
+    }
+
+    .dropbtn p::after {
+      content: '';
+      width: 0%;
+      height: .2rem;
+      background: white;
+      display: block;
+      margin: auto;
+      transition: .5s;
+    }
+
+    .dropbtn p:hover::after {
+      width: 100%;
+    }
+
+    .dropdown-content a:hover {
+      background-color: rgb(250, 222, 171);
+    }
+
+
+    #home2 {
+      min-height: 85rem;
+      width: 94%;
+      background-color: rgb(187 135 3 / 32%);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      overflow: hidden;
+      margin-left: 4.7rem;
+      margin-top: 4.1rem;
+    }
+
+    .sec-h1 {
+      color: black;
+      font-size: 3.4rem;
+      margin-top: 5rem;
+      /* margin-left: 952px; */
+      text-align: center;
+    }
+
+    .sec-p {
+      font-size: 1.5rem;
+      color: rgba(0, 0, 0, 0.904);
+      text-align: center;
+    }
+
+    .container {
+      margin-bottom: .6rem;
+      height: 31.5rem;
+      width: 106%;
+      /* border: 2px solid black; */
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 10.2rem;
+    }
+
+    .box {
+      height: 22.4rem;
+      width: 28.8rem;
+      border: .2rem solid #fbff004d;
+      background-color: #fbff007a;
+      margin-left: 9rem;
+      margin-top: 3.9rem;
+      padding: 2.2rem 3.5rem;
+      border-radius: 4%;
+      box-sizing: border-box;
+      transition: .5s;
+    }
+
+    .box:hover {
+      box-shadow: 0 0 3rem 0rem rgb(31, 29, 29);
+      /*rgba(0, 0, 0, 0.589); */
+    }
+
+    .box img {
+      display: inline-block;
+      height: 9.8rem;
+      width: 9.6rem;
+      margin-left: 6.1rem;
+      margin-top: 1rem;
+    }
+
+    .box a {
+      font-size: 1.8rem;
+      text-decoration: none;
+      color: black;
+      margin-top: .2rem;
+    }
+
+    .box a:hover {
+      color: rgb(3, 3, 187);
+      text-decoration: underline;
+    }
+
+    .adjust {
+      margin-left: 7.8rem;
+    }
+
+    .img1 {
+      border-radius: 50%;
+    }
+
+    .img2 {
+      height: 14.5rem;
+      width: 14.4rem;
+      border-radius: 70%;
+    }
+
+
+
+    #home3 {
+      height: 43.1rem;
+      width: 94%;
+      /* border: 2px solid black; */
+      /* margin-left: 14px; */
+    }
+
+    .home3 {
+      height: 27.4rem;
+      width: 61%;
+      margin-left: 26.3rem;
+      padding: 1rem 7.4rem;
+      margin-top: 4.9rem;
+      border: .2rem solid black;
+      background-color: rgb(181 202 189);
+    }
+
+    /* .btn:hover {
+      background-color: rgb(184, 184, 184);
+    }
+
+    .btn a {
+      font-size: 18px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .btn a:hover {
+      letter-spacing: 1px;
+      color: black;
+      width: 130px;
+    } */
+    .btn:link,
+    .btn:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.1rem 3.9rem;
+      display: inline-block;
+      border-radius: 4.6rem;
+      transition: all .2s;
+      position: absolute;
+      margin-left: 35.9rem;
+      margin-top: 4rem;
+    }
+
+    .btn:hover {
+      transform: translateY(-.3rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.762);
+      background-color: white;
+    }
+
+    .btn:active {
+      transform: translateY(-.1rem);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.972);
+    }
+
+    .btn-white {
+      background-color: #ff0000d6;
+      color: black;
+      font-weight: bold;
+    }
+
+    .btn::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .4s;
+    }
+
+    .btn-white::after {
+      background-color: rgba(255, 255, 255, 0.721);
+    }
+
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+
+    /* .btn-animated {
+      animation: moveInBottom 5s ease-out;
+      animation-fill-mode: backwards;
+    }
+
+    @keyframes moveInBottom {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    } */
+
+    #home3 h1 {
+      font-size: 4.1rem;
+      margin-left: 17.9rem;
+      margin-top: 6.7rem;
+    }
+
+
+    #home4 {
+      height: 96rem;
+      width: 57%;
+      border: .2rem solid black;
+      margin-left: 33.7rem;
+      background-color: rgb(187 135 3 / 32%);
+      margin-top: -5.6rem;
+    }
+
+    .sec1-p {
+      font-size: 1.3rem;
+      /* margin-left: 6px; */
+      margin-top: .9rem;
+    }
+
+    .para {
+      margin-left: 1.7rem;
+      margin-top: 2.2rem;
+    }
+
+    .bold {
+      display: inline;
+      font-size: 1.7rem;
+      font-weight: bold;
+      /* text-align: center;
+      padding: 21px 21px; */
+    }
+
+    .container2 {
+      margin-bottom: .6rem;
+      height: 31.5rem;
+      width: 106%;
+      /* border: 2px solid black; */
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 7.8rem;
+    }
+
+    .box2 {
+      height: 21.6rem;
+      width: 20.9rem;
+      border: .2rem solid rgb(55 3 187 / 3%);
+      background-color: rgb(129 8 249 / 13%);
+      margin-left: 2.3rem;
+      margin-top: 3.9rem;
+      padding: 2.2rem 3.5rem;
+      border-radius: 4%;
+      box-sizing: border-box;
+      transition: .5s;
+    }
+
+    .box2:hover {
+      box-shadow: 0 0 3rem 0rem rgb(31, 29, 29);
+      /*rgba(0, 0, 0, 0.589); */
+    }
+
+    .box2 img {
+      display: inline-block;
+      height: 14.2rem;
+      width: 11.3rem;
+      margin-left: 1.1rem;
+      margin-top: -.5rem;
+    }
+
+    .adjust1 {
+      margin-left: 19.3rem;
+      margin-top: -4.6rem;
+    }
+
+    .adjust2 {
+      margin-left: 2.1rem;
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.753);
+      text-align: center;
+    }
+
+    /* @media only screen and (max-width:1308px) {
+      html {
+        font-size: 54.5%;
+      }
+    }
+
+    @media only screen and (max-width:1256px) {
+      html {
+        font-size: 51.5%;
+      }
+
+      .center {
+        top: 18.8rem;
+      }
+    } */
+    /* 
+    @media only screen and (max-width:1010px) {
+     html{
+       font-size: 42.5%;
+     }
+
+      .center {
+        top: 24.8rem;
+        height: 48.2rem;
+        width: 57%;
+      }
+
+      #home2 {
+        min-height: 96rem;
+      }
+
+      .container {
+        margin-bottom: -4.4rem;
+        margin-top: 8rem;
+      }
+    }
+
+    @media only screen and (max-width:1064px) {
+      html {
+        font-size: 44.5%;
+      }
+
+      #home1 {
+        min-height: 96rem;
+      }
+
+      .center {
+        height: 53.2rem;
+        padding: 5.5rem;
+      }
+    }
+
+    @media only screen and (max-width: 974px) {
+      html {
+        font-size: 40.5%;
+      }
+      .center {
+        height: 46.2rem;
+        padding: 4.5rem;
+      }
+    }
+*/
+
+    @media only screen and (max-width: 740px) and (min-width:360px) {
+      html {
+        font-size: 14.5%;
+      }
+
+      .marquee {
+        height: 23rem;
+      }
+
+      #home1 {
+        min-height: 116rem;
+      }
+
+      .center {
+        top: 25.8rem;
+        height: 51.2rem;
+        width: 61%;
+      }
+    }
+
+    @media only screen and (max-width: 1024px) and (min-width:768px) {
+      html {
+        font-size: 31.5%;
+      }
+
+      .marquee {
+        height: 17rem;
+      }
+
+      #home1 {
+        min-height: 103rem;
+      }
+
+      .center {
+        top: 25.8rem;
+        height: 54.2rem;
+        width: 58%;
+      }
+
+      .heading {
+        padding: 10.6rem 0rem;
+        margin-left: -1.7rem;
+        font-size: 3.5rem;
+      }
+    }
+
+    @media only screen and (max-width:851px) and (min-width:393px) {
+      .container {
+        margin-left: 19.2rem;
+      }
+
+      .adjust3 {
+        margin-left: 11.8rem;
+      }
+
+      .home3 {
+        height: 31.4rem;
+      }
+
+      #home4 {
+        height: 103rem;
+        margin-left: 35.7rem;
+      }
+    }
+
+    @media only screen and (max-width:1280px) and (min-width:800px) {
+      html {
+        font-size: 52.5%;
+      }
+
+      #home1 {
+        min-height: 75rem;
+      }
+
+      .center {
+        top: 13.8rem;
+        height: 42.2rem;
+      }
+
+      .heading {
+        padding: 7.6rem 0rem;
+        margin-left: 10.3rem;
+        font-size: 3.5rem;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section id="home1">
+    <div class="header">
+      <img src="newlogo2-removebg-preview.png">
+      <!-- <h1 style="color: white;"> West Bengal Municipal Services Online Portal</h1> -->
+    </div>
+    <div class="topnav" id="navLinks">
+      <!-- <i class="fa fa-close" onclick="hideMenu()"></i> -->
+      <a href="#home4">About</a>
+      <a href="#home3">Contact</a>
+      <a href="#home2">Links</a>
+      <a href="http://localhost:3001">Complain Registration</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <p>Online Services</p>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <!--<a href="#">Birth Registration</a>-->
+          <a href="death_registration.html">Death Registration</a>
+          <a href="assesment_collection.html">Assesment Collection</a>
+          <a href="covid_bodies.html">Disposal of Covid bodies</a>
+          <a href="revenue.html">Revenue Department</a>
+          <a href="park_dept.html">Parks Department</a>
+          <a href="sewage_NEW.html">Sewage Department</a>
+          <a href="drainage.html">Drainage Department</a>
+          <a href="water_supply.html">Water Supply</a>
+          <a href="parking.html">Car Parking</a>
+
+        </div>
+      </div>
+      <a href="#home1">Home</a>
+    </div>
+    <div class="center">
+      <h1 class="heading">West Bengal Online Municipal Service Portal</h1>
+      <marquee width="100%" direction="up" height="100rem" scrollamount="1" class="marquee">
+        <p style="text-align: center; color: white; font-size: 2.1rem;" class="center-para">This is the official portal
+          for all the online
+          services which are available for the citizens.
+          Users can avail all these services. Informations regarding various departments along with the list
+          of their officers are available. A seperate section has also been given in case of registering
+          a complain with the respective departments.
+        </p>
+      </marquee>
+    </div>
+
+    <!-- <div class="left-other-links" align="left"> 
+      <h2 style="color: white;">Important links:</h2>
+      <p style="color: white;"><a href="http://wbpolice.gov.in/" style="color: white;">West Bengal Police</a></p>
+      <p style="color: white;"><a href="http://www.kolkatapolice.gov.in/" style="color: white;">Kolkata Police</a></p>
+      <p style="color: white;"><a href="http://www.kmdaonline.org/" style="color: white;">Kolkata Metropolitan Development
+          Authority</a></p>
+      <p style="color: white;"><a href="http://www.kmrc.in/" style="color: white;">Kolkata Metro Rail Corporation</a></p>
+    </div>
+  
+    <div class="right-important-news" align="right">
+      <h2 style="color: white;">Important news:</h2>
+      <p style="color: white;"><a href="#" style="color: white;">Emergency Ambulance Service</a></p>
+      <p style="color: white;"><a href="#" style="color: white;">Emergency Oxygen Supply</a></p>
+      <p style="color: white;"><a href="hwh_tt.jpeg" style="color: white;">EMU Train time table Howrah Division</a></p>
+    </div> -->
+  </section>
+  <section id="home2">
+    <h1 class="sec-h1">Important Links</h1>
+
+    <div class="container">
+      <div class="box">
+        <img src="./West_Bengal_Police_Logo.png" alt="">
+        <p class="sec-p"><a href="http://wbpolice.gov.in/">West Bengal Police</a></p>
+      </div>
+      <div class="box adjust">
+        <img src="./Kolkata_Metro_Rail_Corporation_Logo.svg" alt="">
+        <p class="sec-p"><a href="http://www.kmrc.in/">Kolkata Metro Rail Corporation</a></p>
+      </div>
+      <div class="box adjust">
+        <img src="./ambulance.jpg" alt="" class="img1">
+        <p class="sec-p"><a href="http://localhost:3003">Emergency Ambulance Service</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="box">
+        <img src="./kplogo.png" alt="">
+        <p class="sec-p"><a href="http://www.kolkatapolice.gov.in/">Kolkata Police</a></p>
+      </div>
+      <div class="box adjust">
+        <img src="./oxygen.png" alt="" class="img2">
+        <p class="sec-p"><a href="https://dir.indiamart.com/impcat/portable-oxygen-kit.html">Emergency Oxygen Supply</a>
+        </p>
+      </div>
+      <div class="box adjust">
+        <img src="./unnamed.jpg" alt="" class="img1">
+        <p class="sec-p"><a href="http://www.kmdaonline.org/">Kolkata Metropolitan Development Authority</a></p>
+      </div>
+    </div>
+  </section>
+  <section id=home3>
+    <div class="home3">
+      <h1> Have you any questions? </h1>
+      <a href="./contacts.html" class="btn btn-white">Contact Us</a>
+    </div>
+  </section>
+  <section id="home4">
+    <h1 class="sec-h1">- Our Mission -</h1>
+    <p class="sec-p">To provide the most suitable website to solve people's problem</p>
+    <h1 class="sec-h1">About Us</h1>
+    <div class="para">
+      <h1 class="bold">We, Subhodeep Moitra, Rituparna Das, Payel Bhattacharya, Pallabi Dutta and Sampriti Basu, are the
+        Bachelor of Computer Application students, dedicated to professional services, quality web design, and
+        trustworthy
+        results. We create this highly functional user interface with the perfect mixture of simplicity.
+      </h1>
+    </div>
+    <div class="container2 adjust3">
+      <div class="box2">
+        <img src="CADETPICTURE.jpeg" alt="">
+        <p class="sec1-p">Subhodeep Moitra</p>
+      </div>
+      <div class="box2">
+        <img src="Rituparna Das.jpg" alt="">
+        <p class="sec1-p adjust2">Rituparna Das</p>
+      </div>
+      <div class="box2">
+        <img src="Payel Bhattacharya.jpg" alt="">
+        <p class="sec1-p">Payel Bhattacharya</p>
+      </div>
+    </div>
+    <div class="container2 adjust1">
+      <div class="box2">
+        <img src="Pallabi Dutta.jpg" alt="">
+        <p class="sec1-p adjust2">Pallabi Dutta</p>
+      </div>
+      <div class="box2">
+        <img src="Sampriti Basu.jpg" alt="">
+        <p class="sec1-p adjust2">Sampriti Basu</p>
+      </div>
+    </div>
+  </section>
+  <div class="footer">
+    <p style="color: white; font-size: 1.5rem;"><span>&#169;</span>This site belongs to and is maintained by Cyberknox
+      Tech</p>
+  </div>
+</body>
+
+</html>

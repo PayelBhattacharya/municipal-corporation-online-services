@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html en="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="complain_registration_modules/reg.css">
+       <style>
+           body{
+               background:rgba(0,0,0,0.1)url("complain_registration_modules/backg.jpg");
+               background-size: cover;
+               background-blend-mode: darken;
+           }
+       </style>
+    </head>
+    <body>
+        <div class="contain">
+        <div class="container">
+            <div class="upper">
+            <div class="title">Register your complain</div>
+            <p class="para">Fill the form with the details asked</p>
+        </div>
+            <form action="/submit" name="myForm" action="" onsubmit="return validateForm()" method="POST">
+                <div class="user-details">
+                    <div class="row">
+                    <div class="col-23">
+                  <label for="fname">First Name:</label>
+                </div>
+                    <input type="text" name="fname"placeholder="Enter your name" required autofocus>
+                </div>
+                <div class="row">
+                    <div class="col-23">
+                    <label for="fname">Last Name:</label>
+                </div>  
+                    <input type="text" name="flname"placeholder="Enter your name" required autofocus>
+                </div>
+                <div class="row">
+                    <div class="col-23"> 
+                    <label for="fname">Email Id:</label> 
+                </div>
+                    <input type="text" name="femail"placeholder="Enter your name"required autofocus>
+                </div>
+                <div class="row">
+                    <div class="col-23"> 
+                    <label for="fname">Contact</label> 
+                    </div>
+                    <input type="text" name="fcontact"placeholder="Enter your name"required autofocus>
+                </div>
+                <div class="row last">
+                    <div class="col-23"> 
+                    <label for="fname">Address:</label> 
+                    </div>
+                    <input type="text" name="faddress"placeholder="Enter your name"required autofocus>
+                </div>
+            </div>
+                    <hr>
+                    <div class="row-com">
+                        <label for="fname">Complain Details:</label> 
+                        <div class="com">
+                   
+                    <textarea type="text" id="address" rows="10" cols="50" placeholder="Elaborate Your concer"required autofocus></textarea>
+                        </div>
+                    </div>
+                     <div class="sub">
+                        <button class="button btn btn-dark">Register your complain</button>
+
+                      </div>
+
+                    
+        </div>
+        <div class="container-two">
+            <h1 class="heading">Information</h1>
+            <p class="one"></p>
+            <p class="two">In case of any dependency please contact respective officers from the online service section.</p>
+        </div>
+    </div>
+    </body>
+
+</html>

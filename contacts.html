@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Contacts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        .heading {
+            text-align: center;
+            font-family: 'Acme', sans-serif;
+            font-size: 4rem;
+            color: rgb(255, 248, 248);
+            justify-content: center;
+            padding-left: 5rem;
+            letter-spacing: .2rem;
+            font-weight: .1rem;
+            padding-top: 1.5rem;
+        }
+
+        .heading1 {
+            text-align: center;
+            font-family: 'Acme', sans-serif;
+            font-size: 4rem;
+            color: rgb(175, 7, 7);
+            justify-content: center;
+            padding-left: 5rem;
+            letter-spacing: .2rem;
+            font-weight: .1rem;
+            padding-top: 1.5rem;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .paragraph {
+            font-family: 'Acme', sans-serif;
+            font-size: 2rem;
+            color: black;
+        }
+
+        .font {
+            font-family: 'Acme', sans-serif;
+            padding: .7rem 2rem;
+            margin: -.4rem .1rem;
+            font-size: 2rem;
+            color: black;
+        }
+
+        .left {
+            border: .2rem solid grey;
+            margin: 1.2rem .8rem;
+            padding: 2.3rem 2.7rem;
+            width: 37.8rem;
+            height: 14rem;
+        }
+
+        .middle {
+            padding-top: 2.4rem;
+            border: .2rem solid grey;
+            width: 41rem;
+            height: 16.3rem;
+            margin: 1.4rem .4rem;
+        }
+
+        .right {
+            margin-left: .9rem;
+            padding-top: 0;
+            border: .2rem solid grey;
+            width: 41.8rem;
+            height: 18.8rem;
+            margin-right: 1.9rem;
+        }
+
+        .navbar {
+            margin: auto;
+            display: flex;
+            height: auto;
+            background: linear-gradient(rgb(2, 26, 77), rgb(33, 33, 146));
+            border: .2rem solid black;
+            text-align: center;
+        }
+
+        .logo {
+            width: 8%;
+            padding-left: 2rem;
+            padding-top: .4rem;
+            padding-bottom: .4rem;
+        }
+
+        .section1 {
+            padding: .2px 9.5rem;
+            display: flex;
+            align-items: center;
+            margin-left: 25.2rem;
+            margin-right: 4.8rem;
+            margin-top: 1rem;
+        }
+
+        .section2 {
+            padding: .2rem 9.5rem;
+            display: flex;
+            align-items: center;
+            margin-left: 5rem;
+            margin-right: 4.8rem;
+        }
+
+        .section3 {
+            padding: .2px 9.3rem;
+            display: flex;
+            align-items: center;
+            margin-left: 5rem;
+            margin-right: 4.8rem;
+        }
+
+        .section4 {
+            padding: .2rem 9.3rem;
+            display: flex;
+            align-items: center;
+            margin-left: 5rem;
+            margin-right: 4.8rem;
+        }
+
+        .section5 {
+            padding: .2rem 9.3rem;
+            display: flex;
+            align-items: center;
+            margin-left: 5rem;
+            margin-right: 4.8rem;
+        }
+
+        .container,
+        .container1 {
+            border: .2rem solid grey;
+            margin: 1.6rem .6rem;
+        }
+
+        .container {
+            width: 38rem;
+            height: 22.9rem;
+        }
+
+        .container1 {
+            width: 40.5rem;
+            height: 22.8rem;
+        }
+
+        .container20 {
+            width: 42rem;
+            height: 19.2rem;
+        }
+
+        .container h1 {
+            margin-top: 4.7rem;
+            padding: .1rem;
+            font-size: 2.6rem;
+            margin-left: -19.3rem;
+        }
+
+        .container1 h1 {
+            margin-top: -.1rem;
+            margin-left: -13rem;
+            padding-top: 1.4rem;
+            font-size: 2.8rem;
+        }
+
+        .container p {
+            margin-top: -.8rem;
+            padding: 1.2rem 0;
+            margin-left: 2.3rem;
+        }
+
+        .container1 p {
+            line-height: 2rem;
+            margin-left: 2.7rem;
+        }
+
+        .container20 p {
+            padding: .7 2rem;
+            line-height: .7rem;
+        }
+
+        .section1 div {
+            background: linear-gradient(rgb(25, 190, 255), white);
+        }
+
+        .section2 div {
+            background: linear-gradient(rgb(25, 190, 255), white);
+        }
+
+        .section3 div {
+            background: linear-gradient(rgb(25, 190, 255), white);
+        }
+
+        .section4 div {
+            background: linear-gradient(rgb(25, 190, 255), white);
+        }
+
+        .section5 div {
+            background: linear-gradient(rgb(25, 190, 255), white);
+        }
+
+        .footer {
+            background: black;
+            color: white;
+            padding: .9rem 2rem;
+            text-align: center;
+            font-size: 1.7rem;
+        }
+
+        @media only screen and (min-width:360px) and (max-width:640px) {
+            html {
+                font-size: 11.5%;
+            }
+
+            body {
+                border: .1rem solid black;
+                width: 147rem;
+            }
+
+            .section1 {
+                margin-left: 46.2rem;
+            }
+
+            .section2 {
+                margin-left: 21rem;
+            }
+
+            .section3 {
+                margin-left: 22rem;
+            }
+
+            .section4 {
+                margin-left: 22rem;
+            }
+
+            .section5 {
+                margin-left: 22rem;
+            }
+        }
+
+        @media only screen and (min-width:600px) and (max-width:1024px) {
+            html {
+                font-size: 40.5%;
+            }
+
+            .logo {
+                width: 12%;
+            }
+
+            .heading {
+                font-size: 6rem;
+            }
+
+            .section1 {
+                margin-left: 28.2rem;
+            }
+
+            .section2 {
+                margin-left: 5rem;
+            }
+
+            .section3 {
+                margin-left: 5rem;
+            }
+
+            .section4 {
+                margin-left: 5rem;
+            }
+
+            .section5 {
+                margin-left: 5rem;
+            }
+
+            footer {
+                padding: 0rem 2rem;
+            }
+
+            .footer {
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:800px) and (max-width:1280px)
+        {
+            html {
+                font-size: 61.5%;
+            }
+
+            /* .logo {
+                width: 12%;
+            }
+
+            .heading {
+                font-size: 6rem;
+            } */
+
+            .section1 {
+                margin-left: 16.2rem;
+            }
+
+            /* .section2 {
+                margin-left: 5rem;
+            }
+
+            .section3 {
+                margin-left: 5rem;
+            }
+
+            .section4 {
+                margin-left: 5rem;
+            }
+
+            .section5 {
+                margin-left: 5rem;
+            }
+
+            footer {
+                padding: 0rem 2rem;
+            }
+
+            .footer {
+                font-size: 2rem;
+                text-align: center;
+            }*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <img class="logo" src="newlogo2-removebg-preview.png" alt="image">
+        <h1 class="heading center">Important Contacts</h1>
+    </div>
+    <div class="section1">
+        <div class="container">
+            <h1 class="heading1">CHAIRMAN</h1>
+            <p class="paragraph">Board of Administrators</p>
+        </div>
+        <div class="container1">
+            <h1 class="heading1"> Mr.Subhodeep Moitra</h1>
+            <p class="paragraph">I.P.S.</p>
+            <p class="paragraph">Telephone: Office (Direct) 2267-4532</p>
+            <p class="paragraph">Fax: 2234-5643/1023</p>
+            <p class="paragraph">Email: municsofficial@gmail.com</p>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="container3 left">
+            <p class="paragraph"> Municipal Commissioner</h1>
+        </div>
+        <div class="container4 middle">
+            <p class="paragraph">Payel Bhattacharya</p>
+            <p class="paragraph">I.A.S.</p>
+        </div>
+        <div class="container5 right">
+            <p class="paragraph">Phone: 2286-1234/1034(D), 2286-1000</p>
+            <p class="paragraph">Fax :033-2286-1434/1334</p>
+            <p class="paragraph"> Extn. 2531/2474</p>
+            <p class="paragraph"> e-mail : munics@gov.in</p>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="container6 left">
+            <p class="paragraph"> Municipal Commissioner Special(Development & Supply)</h1>
+        </div>
+        <div class="container7 middle">
+            <p class="paragraph">Rituparna Das</p>
+            <p class="paragraph">I.A.S.</p>
+        </div>
+        <div class="container8 right">
+            <p class="paragraph">Phone: 2312-1234/1034(D), 2286-1000</p>
+            <p class="paragraph">Fax :033-2287-1434/1334</p>
+            <p class="paragraph"> Extn. 3421/2474</p>
+            <p class="paragraph"> e-mail : munics@gov.in</p>
+        </div>
+    </div>
+    <div class="section4">
+        <div class="container9 left">
+            <p class="paragraph"> Special Municipal Commissioner (Revenue)</h1>
+        </div>
+        <div class="container10 middle">
+            <p class="paragraph">Pallabi Dutta</p>
+            <p class="paragraph">WBCS(Exe.)</p>
+        </div>
+        <div class="container11 right">
+            <p class="paragraph">Phone: 2311-1234/1034(D), 2286-1000</p>
+            <p class="paragraph">Fax :033-2285-1434/1334</p>
+            <p class="paragraph"> Extn. 3428/2474</p>
+            <p class="paragraph"> e-mail : munics@gov.in</p>
+        </div>
+    </div>
+    <div class="section5">
+        <div class="container12 left">
+            <p class="paragraph">Municipal Secretary</h1>
+        </div>
+        <div class="container13 middle">
+            <p class="paragraph">Sampriti Basu</p>
+            <p class="paragraph">WBCS(Exe.)</p>
+        </div>
+        <div class="container14 right">
+            <p class="paragraph">Phone: 2301-1234/1034(D), 2286-1000</p>
+            <p class="paragraph">Fax :033-2385-1434/1334</p>
+            <p class="paragraph"> Extn. 3428/2474</p>
+            <p class="paragraph"> e-mail : munics@gov.in</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>

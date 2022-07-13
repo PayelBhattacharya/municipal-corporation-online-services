@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ecf9ff;
+}
+
+body {
+  color: #272727;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
+.covid_image{
+  height: 275px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.park_image{
+  height: 319px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.death{
+  height: 297px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.tax{
+  height: 339px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+img {
+  height: 318px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.drainage{
+  height: 245px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.water{
+  height: 266px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+.carparking{
+  height: 266px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+a{
+  color: aliceblue;
+  text-decoration: none;
+  size:30px;
+}
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #4ea2f0 40%, #4384ce 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+    
+
+<div class="main">
+  <h1>ONLINE SERVICES</h1>
+  <ul class="cards">
+    
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img class="death" src="deathregistration.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Death Registration</h2>
+          <p class="card_text">Death Certificates can be obtained only if the event of death is rgistered with KMC</p>
+          <button class="btn card_btn"><a href="death_registration.html">Read More</a></button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="assesmentpicture.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Assesment collection</h2>
+          <p class="card_text">Assesment of property Tax in Kolkata</p>
+          <button class="btn card_btn" ><a href="assesment_collection.html">Read more </a></button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img class="covid_image" src="covid_Disposal.jpeg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Disposal Of covid bodies</h2>
+          <p class="card_text">Infection prevention and control for the safe management of a dead body in the context of COVID-19</p>
+          <button class="btn card_btn"><a href="covid_bodies.html" class="href">Read More</a></button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img class="tax" src="taximage.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Revenue Department</h2>
+          <p class="card_text">Revenue Department </p>
+          <button class="btn card_btn"><a href="revenue.html" class="href">Read More</a></button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img class="park_image" src="parkimage.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Parks Department</h2>
+          <p class="card_text">Parks and recreation departments ensure that citizens have spaces to exercise play</p>
+          <button class="btn card_btn"><a href="park_dept.html" class="href">Read More</a></button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="sewagepicture.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">Sewage Department</h2>
+            <p class="card_text">The key activities of the department are Draining of waste water from city of Kolkata</p>
+            <button class="btn card_btn"><a href="sewage_NEW.html" class="href">Read More</a></button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img class="drainage" src="drainageimage.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">Drainage Department</h2>
+            <p class="card_text">The key activities of the department are Draining of waste water from city of Kolkata</p>
+            <button class="btn card_btn"><a href="drainage.html" class="href">Read More</a></button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img class="water" src="watersupply2.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">Water Supply</h2>
+            <p class="card_text">Water supply department </p>
+            <button class="btn card_btn"><a href="water_supply.html" class="href">Read More</a></button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img class="carparking" src="carparking.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">Car Parking</h2>
+            <p class="card_text">Car Parking Department</p>
+            <button class="btn card_btn"><a href="parking.html" class="href">Read More</a></button>
+          </div>
+        </div>
+      </li>
+  </ul>
+</div>
+
+<h3 class="made_by">Made with ♡</h3>
+</body>
+</html>
